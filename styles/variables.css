@@ -5,11 +5,21 @@
 :root {
   --bg-image: url("../images/cover-image-dark.png");
   --bg-color: #000028;
-  --primary-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --title-color: #DB00FF;
-  --font-family-base: 'IBM Plex mono', sans-serif;
+  --primary-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --decor-color: var(--accent-color);
+  --decor-color-muted: rgba(255, 0, 112, 0.4);
+  --title-color: #db00ff;
+  --title-shadow-offset-x: 4px;
+  --title-shadow-offset-y: 4px;
+  --title-shadow-offset-slim-x: 2px;
+  --title-shadow-offset-slim-y: 2px;
+  --title-shadow-blur: 0;
+  --title-shadow-color: var(--accent-color);
+  --section-subtitle-color: var(--bg-color);
+  --footer-title-shadow-color: var(--accent-color);
+  --text-color: var(--primary-color);
+  --font-family-base: "IBM Plex mono", sans-serif;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
-
 }

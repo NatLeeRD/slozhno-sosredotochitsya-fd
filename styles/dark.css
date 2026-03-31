@@ -7,7 +7,9 @@
 :root.theme-dark {
   --bg-image: url("../images/cover-image-dark.png");
   --bg-color: #000028;
-  --primary-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --title-color: #DB00FF;
+  --primary-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --decor-color: var(--accent-color);
+  --decor-color-muted: rgba(255, 0, 112, 0.4);
+  --title-color: #db00ff;
 }
