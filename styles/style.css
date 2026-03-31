@@ -154,6 +154,7 @@
 
 .section__type-gallery {
   margin-bottom: 0px;
+  gap: 10px;
 }
 
 .section__title {
@@ -206,10 +207,6 @@
 
 .section__text-link:focus-visible {
   border: 1px solid currentColor;
-}
-
-.section__type-gallery {
-  gap: 10px;
 }
 
 .gallery__wrapper {
