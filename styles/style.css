@@ -114,6 +114,10 @@
   border: 1px solid var(--decor-color);
 }
 
+.header__theme-menu-button_active {
+  border: 1px solid var(--decor-color);
+}
+
 .header__title {
   grid-row: 2;
 }

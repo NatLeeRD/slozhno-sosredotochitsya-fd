@@ -1,3 +1,4 @@
+/* переменные, светлая тема по кнопке */
 :root.theme-light {
   --bg-image: url("../images/cover-image-light.png");
   --bg-color: #fff1f7;
@@ -10,9 +11,9 @@
   --section-subtitle-color: var(--primary-color);
 }
 
-/* Авто светлая тема */
+/* Авто светлая тема, переменные */
 @media (prefers-color-scheme: light) {
-  :root:not(.theme-dark) {
+  :root.theme-auto {
     --bg-image: url("../images/cover-image-light.png");
     --bg-color: #fff1f7;
     --primary-color: #353430;
@@ -21,16 +22,30 @@
     --decor-color-muted: rgba(50, 49, 45, 0.4);
     --title-color: #ffc2e6;
     --title-decor-color: #ff0070;
+    --section-subtitle-color: var(--primary-color);
   }
 }
 
 /* Поведенческие стили темы */
-.theme-light .decorated-zone__decorative-label {
+:root.theme-light .decorated-zone__decorative-label {
   display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root.theme-auto .decorated-zone__decorative-label {
+    display: none;
+  }
 }
 
 @media (width >= 1024px) {
   :root.theme-light .footer__title {
+    --title-shadow-color: var(--title-decor-color);
+  }
+}
+
+
+@media (min-width: 1024px) and (prefers-color-scheme: light) {
+  :root.theme-auto .footer__title {
     --title-shadow-color: var(--title-decor-color);
   }
 }
