@@ -43,9 +43,8 @@
   }
 }
 
-
 @media (min-width: 1024px) and (prefers-color-scheme: light) {
-  :root.theme-auto .footer__title {
+  .footer__title {
     --title-shadow-color: var(--title-decor-color);
   }
 }
